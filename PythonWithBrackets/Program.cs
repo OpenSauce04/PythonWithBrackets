@@ -6,7 +6,18 @@ namespace PythonWithBrackets
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			switch(args[0])
+			{
+				case "-b":
+					Console.WriteLine("Build");
+					break;
+				case "-r":
+					Console.WriteLine("Run");
+					break;
+				case "-k":
+					Console.WriteLine("Run and keep");
+					break;
+			}
 		}
 	}
 }
