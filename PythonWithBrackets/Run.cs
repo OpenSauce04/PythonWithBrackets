@@ -6,7 +6,7 @@ namespace PythonWithBrackets
 	{
 		static void Run()
 		{
-			Console.WriteLine("Run");
+			Console.WriteLine("Running...");
 		}
 	}
 }

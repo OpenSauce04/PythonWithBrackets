@@ -34,7 +34,7 @@ namespace PythonWithBrackets
 						IncorrectUsageMessage();
 						break;
 				}
-			} catch (IndexOutOfRangeException e)
+			} catch (IndexOutOfRangeException)
 			{
 				IncorrectUsageMessage();
 			}
