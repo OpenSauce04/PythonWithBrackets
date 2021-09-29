@@ -17,6 +17,7 @@ namespace PythonWithBrackets
 			cmdProcess.StartInfo = cmdStartInfo;
 
 			cmdProcess.Start();
+			cmdProcess.WaitForExit();
 
 			Console.WriteLine("done");
 		}

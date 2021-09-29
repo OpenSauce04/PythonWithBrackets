@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace PythonWithBrackets
 {
@@ -8,7 +9,12 @@ namespace PythonWithBrackets
 		{
 			Console.Write("Cleaning up...");
 
-
+			DirectoryInfo di = new DirectoryInfo("pwbBuild");
+			foreach (FileInfo file in di.GetFiles())
+			{
+				file.Delete();
+			}
+			Directory.Delete("pwbBuild");
 
 			Console.WriteLine("done");
 		}
