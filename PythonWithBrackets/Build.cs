@@ -23,7 +23,7 @@ namespace PythonWithBrackets
 				indentCount--;
 				return "";
 			}
-			return new String(' ', indentCount*2) + line;
+			return new String(' ', indentCount*2) + line.TrimStart();
 		}
 	}
 	partial class Program
