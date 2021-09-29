@@ -43,7 +43,8 @@ namespace PythonWithBrackets
 					newFile += Parse.ParseLine(line);
 					newFile += '\n';
 				}
-				Console.WriteLine(newFile);
+				File.Delete(file);
+				File.WriteAllText(file.Substring(0, file.LastIndexOf('.')) + ".py", newFile);
 			}
 
 		}
