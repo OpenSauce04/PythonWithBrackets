@@ -6,7 +6,7 @@ namespace PythonWithBrackets
 	{
 		static void IncorrectUsageMessage()
 		{
-			Console.WriteLine("No arguments specified");
+			Console.WriteLine("Invalid arguments specified!\n");
 			Console.WriteLine("Usage:");
 			Console.WriteLine("pwb -b: Build");
 			Console.WriteLine("pwb -r: Run");
