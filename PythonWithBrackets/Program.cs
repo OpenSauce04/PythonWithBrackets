@@ -9,8 +9,8 @@ namespace PythonWithBrackets
 			Console.WriteLine("Invalid arguments specified!\n");
 			Console.WriteLine("Usage:");
 			Console.WriteLine("pwb -b: Build");
-			Console.WriteLine("pwb -r: Run");
-			Console.WriteLine("pwb -br: Build and run");
+			Console.WriteLine("pwb -r [main file name (NO EXTENSION)]: Run");
+			Console.WriteLine("pwb -br [main file name (NO EXTENSION)]: Build and run");
 		}
 		static void Main(string[] args)
 		{
@@ -23,12 +23,12 @@ namespace PythonWithBrackets
 						break;
 					case "-r":
 						Build();
-						Run();
+						Run(args[1]);
 						Clean();
 						break;
 					case "-br":
 						Build();
-						Run();
+						Run(args[1]);
 						break;
 					default:
 						IncorrectUsageMessage();

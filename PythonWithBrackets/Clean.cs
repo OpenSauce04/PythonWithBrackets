@@ -6,7 +6,11 @@ namespace PythonWithBrackets
 	{
 		static void Clean()
 		{
-			Console.WriteLine("Cleaning up...");
+			Console.Write("Cleaning up...");
+
+
+
+			Console.WriteLine("done");
 		}
 	}
 }

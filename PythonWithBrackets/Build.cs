@@ -31,7 +31,8 @@ namespace PythonWithBrackets
 		
 		static void Build()
 		{
-			Console.WriteLine("Building...");
+			Console.Write("Building...");
+
 			DirectoryCopy.Copy("./", "pwbBuild", true);
 			string[] files = Directory.GetFiles("./pwbBuild", "*.pyb", SearchOption.AllDirectories);
 			foreach (var file in files)
@@ -47,6 +48,7 @@ namespace PythonWithBrackets
 				File.WriteAllText(file.Substring(0, file.LastIndexOf('.')) + ".py", newFile);
 			}
 
+			Console.WriteLine("done");
 		}
 	}
 }
