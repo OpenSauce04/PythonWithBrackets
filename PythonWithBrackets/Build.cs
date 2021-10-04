@@ -18,7 +18,7 @@ namespace PythonWithBrackets
 				line += ':';
 				nextIndentCount++;
 			}
-			if (line == "}") 
+			if (line.Trim() == "}") 
 			{
 				indentCount--;
 				return "";
